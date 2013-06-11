@@ -19,6 +19,8 @@
 # limitations under the License.
 #
 
+chef_gem "rinruby"
+
 if node['r']['install_repo']
   include_recipe "r::repo"
 end
