@@ -33,3 +33,6 @@ else
 end
 
 default['r']['install_dev'] = true
+
+default['r']['distro_name'] = nil
+
