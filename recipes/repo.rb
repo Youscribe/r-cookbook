@@ -37,7 +37,7 @@ when "debian"
     return "platform not supported"
   end
   
-  unless node['r']['distro_name']
+  if node['r']['distro_name']
     distro_name = node['r']['distro_name']
   end
 
