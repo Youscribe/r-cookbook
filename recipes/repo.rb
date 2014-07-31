@@ -37,9 +37,9 @@ when "debian"
     return "platform not supported"
   end
   
-#  unless node['r']['distro_name']
-#    distro_name = node['r']['distro_name']
-#  end
+  unless node['r']['distro_name']
+    distro_name = node['r']['distro_name']
+  end
 
   apt_repository "cran-apt-repo" do
     uri "#{node['r']['cran_mirror']}/bin/linux/#{node['platform']}"
