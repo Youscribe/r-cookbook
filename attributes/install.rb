@@ -1,4 +1,4 @@
-include_attributes "r"
+#include_attributes "r"
 
 
 case node['r']['install_method']
